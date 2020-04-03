@@ -57,14 +57,15 @@ to do the recording and compression, rendering activities for other apps
 (such as typing and menu selection) unworkable.
 
 After much tinkering around, the author decides to release two versions of the recorder 
-known as v0.71 (PuppyDisk), and v0.72 (KittyMemory). The former dumps all frames into a filestream 
-while the latter dumps all frames into the memory. Both versions seems able to sustain stable recordings up to a few minutes.
-The former may give non respectable frame rates for large / full screen recordings, 
+known as v0.71 (PuppyDisk), and v0.72 (KittyMemory). These two versions managed to avoid many of the problems
+mentioned in the above paragraph. The former dumps all frames into a filestream 
+while the latter dumps all frames into the memory. Both versions seems able to sustain stable recordings for at least a few minutes.
+The former may still give low frame rates when performing full screen recordings, 
 while the latter offers better performance but at the price of being a memory hog.
  
 For the latter version (v0.72 KittyMemory), while some may argue that dumping all recorded frames 
-into memory (insted of the disk) is very wasteful of resources; however, considering a modern PCs having 8GB++ , 
-especially in business machines or gaming machines with high performance, 
+into memory (insted of the disk) is very wasteful of resources; however, considering most modern PCs 
+will be having 8GB of memory or more,  especially in high performance business machines or gaming machines, 
 recording the screen for like 10 minutes will probably take less than 1 GB of memory,
 but doing will give very stable rates of recording and decent interactivity for the user.
 
@@ -90,7 +91,7 @@ is a very common scenario encountered by many programmers who wish to produce a 
 from their existing animation or graphics software. In this project, the editing of a image 
 with the popular module Win2D (C#) and saving them into a movie has been demonstrated.
 
-**Limitations : **
+**Limitations**
 
 This project currently utilizes the MediaComposition (namespace Windows.Media.Editing) API
 to produce a MPEG movie. While this method is extremely easy with just a few lines of code,
@@ -99,8 +100,7 @@ can be slow and unstable. In the near future, an improved version using Transcod
 will be utilized to make the encoding more robust.
 
 
-
-Credits :
+**Credits**
 At the time of this writing, other samples already exist, and some parts of this project
  has been referenced from them.
 
