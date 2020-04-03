@@ -4,16 +4,16 @@ A Modern Open Source UWP Screen Recorder
 **OpenScreenRecorder** (Open Source) is a modern UWP Screen Recorder written in
 Windows.Graphics.Capture API. It demonstrates how a programmer can take 
 advantage of these new APIs to produce a screen recorder in minutes. 
-In addition to the Windows Graphics Capture API, the recorder also utilizies
+In addition to the Windows Graphics Capture API, the recorder also utilizes
  Win 2D , and MediaComposition (Windows.Media.Editing). 
  
  <kbd><img src="https://github.com/TechnoRiver/OpenScreenRecorder/blob/master/images/OpenScreenRecorder.png"></kbd>
 
 All these APIS are quite recent releases in the .NET Core framework for Windows.
-Some of them also take advantage of GPU and hardware acceleration to deliver 
+Some of them take advantage of GPU and hardware acceleration to deliver 
 high performance results. As the tool is written in .NET Core, 
 a programmer may also easily compile the project to ARM and ARM64 using Visual Studio. 
-Currently, the tool is tested to run on (recently updated version 1809 of ) 
+Currently, the tool is tested to run on (the recently updated version 1809 of ) 
 Windows 10. To compile in Windows, after downloading the project, you may want to set the Solution Platform to x86 or x64.
 
 <kbd><img src="https://github.com/TechnoRiver/OpenScreenRecorder/blob/master/images/SolutionPlatform.png"></kbd>
@@ -26,20 +26,20 @@ on how these media APIs integrate together into a working software.
 
 While at current state, the recorder is written more like a 
 sample rather than a robust software capable of handling all kinds of situations, 
-this simple tool has taken the author a painstaking period of over 2 months to put together
+this simple tool has taken the author a painstaking period of over 2 months just to put together
 a small task of gathering frames in IDirect3DSurface and saving them into 
 a MPEG4 movie.
 
-The UWP screen recorder sample is designed to be resuable and simple. It works in 2 stages,
+The UWP screen recorder sample is designed to be resuable and simple. It works in two stages,
 the first stage being capturing the frames, compressing them and dumping them into a filestream or memory.
 A thread has been create specially to retrieve the individual captured frames (IDirect3DSurface) and compressing
 them using Win2D into PNG files. The compressed data is then written to disk with a filestream.
 After the user clicked the 'Stop' button to stop the recording, he / she may proceed to the
 second stage to encode the saved stream into a MPEG (mp4) file.
 
-By separating the functioning of the recorder into 2 stages make the tool very modular 
-and reusable. For example, a programmer can improve upon the 1st stage to use other forms of compression, which has the potential 
-to speed up its efficiency or speed of recording. The second stage for encoding consists of just a 
+By separating the functioning of the recorder into two stages make the tool very modular 
+and reusable. For example, a programmer can improve upon the first stage to use other forms of compression, which has the potential 
+to speed up its efficiency or speed of recording. As for the second stage, the encoding process consists of just a 
 small block of code to unpack each frame from the filestream and add each frame as MediaClips to the
 MediaCompositor to produce a MPEG file.
 
@@ -48,18 +48,18 @@ For example, the separate thread for dumping frames is removed to attempt to fur
 Also, the two separate stages for recording and recording are combined into one so that all
 the recording and compressing work can be placed into a single event. Futhermore, the compressing
 and decompressing of frames are removed so that each frame recorded can be directly written to the
-MPEG file. However, results show that such configuration is unable to sustain recording 
-for more than 1 minute. The exact cause is still unknown as using all these different new APIs
-together constitute a big challenge and finding the bug becomes a trial and error affair
+MPEG file. However, results show that such configurations are not able to sustain recording 
+for more than one minute. The exact cause is still unknown as using all these different new APIs
+together constitute a big challenge and finding the bug becomes chiefly a trial and error affair
 as documentation proves to be inadequate. Futhermore, once the recording starts,
  the user interactivity becomes quite bad, and the CPU seems to have grabbed all resources
-to do the recording and compression, rendering simple activities for other apps 
-such as typing, menu selection non-workable.
+to do the recording and compression, rendering activities for other apps 
+(such as typing and menu selection) unworkable.
 
-After much tinkering around, the author decides to release 2 versions of the recorder 
+After much tinkering around, the author decides to release two versions of the recorder 
 known as v0.71 (PuppyDisk), and v0.72 (KittyMemory). The former dumps all frames into a filestream 
 while the latter dumps all frames into the memory. Both versions seems able to sustain stable recordings up to a few minutes.
-The former may give dismay frame rates for large / full screen recordings, 
+The former may give non respectable frame rates for large / full screen recordings, 
 while the latter offers better performance but at the price of being a memory hog.
  
 For the latter version (v0.72 KittyMemory), while some may argue that dumping all recorded frames 
