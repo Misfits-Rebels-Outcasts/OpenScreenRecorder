@@ -105,3 +105,9 @@ will be utilized to make the encoding more robust.
 At the time of this writing, other samples already exist, and some parts of this project
  has been referenced from them.
 
+Screen Capture sample:
+https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/screen-capture
+
+Simple Screen Recorder
+https://github.com/robmikh/SimpleRecorder
+https://github.com/robmikh/SimpleRecorder
