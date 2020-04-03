@@ -102,8 +102,8 @@ will be utilized to make the encoding more robust.
 
 
 **Credits**
-At the time of this writing, other samples already exist, and some parts of this project
- has been referenced from them.
+
+At the time of this writing, other samples already exist, and some parts of this project has been referenced from them.
 
 Screen Capture sample:
 https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/screen-capture
