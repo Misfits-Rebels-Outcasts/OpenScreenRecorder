@@ -7,7 +7,7 @@ advantage of these new APIs to produce a screen recorder in minutes.
 In addition to the Windows Graphics Capture API, the recorder also utilizies
  Win 2D , and MediaComposition (Windows.Media.Editing). 
  
- ![Image of OpenScreenRecorder](https://github.com/TechnoRiver/OpenScreenRecorder/blob/master/images/OpenScreenRecorder.png)
+ <kbd><img src="https://github.com/TechnoRiver/OpenScreenRecorder/blob/master/images/OpenScreenRecorder.png"></kbd>
 
 All these APIS are quite recent releases in the .NET Core framework for Windows.
 Some of them also take advantage of GPU and hardware acceleration to deliver 
@@ -16,11 +16,7 @@ a programmer may also easily compile the project to ARM and ARM64 using Visual S
 Currently, the tool is tested to run on (recently updated version 1809 of ) 
 Windows 10. To compile in Windows, after downloading the project, you may want to set the Solution Platform to x86 or x64.
 
- ![Image of SolutionPlatform](https://github.com/TechnoRiver/OpenScreenRecorder/blob/master/images/SolutionPlatform.png)
-
-**Usage**
-
-![Image of Usage](https://github.com/TechnoRiver/OpenScreenRecorder/blob/master/images/Usage.png)
+<kbd><img src=https://github.com/TechnoRiver/OpenScreenRecorder/blob/master/images/SolutionPlatform.png"></kbd>
 
 The way the code works together represents a very useful skillset for a programmer 
 looking into creating media softwares using modern APIs for UWP Windows Apps.
@@ -72,6 +68,11 @@ especially in business machines or gaming machines with high performance,
 recording the screen for like 10 minutes will probably take less than 1 GB of memory,
 but doing will give very stable rates of recording and decent interactivity for the user.
 
+
+**Usage**
+
+<kbd><img src=https://github.com/TechnoRiver/OpenScreenRecorder/blob/master/images/Usage.png"></kbd>
+
 Note, after (stopping) the recording , the user will still need to manually click the 
 'Unpack' button to encode the compressed frames into a MPEG (mp4) file. This step may require 
 even more time than the recording duration. For example, if the recording of video takes 
@@ -80,7 +81,7 @@ While this design seems to require an extra step / stage / waiting time, it is t
  such configuration that the user can be assured of the highest frame rates, 
 sustainable recording and acceptable interactivity during recording.
 
-Potential for Direct3D Renderings
+**Potential for Direct3D and Win2D Renderings**
 
 This project has the potential to be widely adopted in many uses which involve 
 the rendering of Direct3D Surfaces into a movie. Editing a frame in raw RGB / BGRA format, 
@@ -89,13 +90,15 @@ is a very common scenario encountered by many programmers who wish to produce a 
 from their existing animation or graphics software. In this project, the editing of a image 
 with the popular module Win2D (C#) and saving them into a movie has been demonstrated.
 
-Limitations : 
+**Limitations : **
 
 This project currently utilizes the MediaComposition (namespace Windows.Media.Editing) API
 to produce a MPEG movie. While this method is extremely easy with just a few lines of code,
 there is a concern that encoding a large video, say, with more than 1000 frames 
 can be slow and unstable. In the near future, an improved version using Transcoding API 
 will be utilized to make the encoding more robust.
+
+
 
 Credits :
 At the time of this writing, other samples already exist, and some parts of this project
