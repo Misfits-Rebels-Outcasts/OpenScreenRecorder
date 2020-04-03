@@ -1,7 +1,7 @@
 # OpenScreenRecorder
 A Modern Open Source UWP Screen Recorder
 
-OpenScreenRecorder (Open Source) is a modern UWP Screen Recorder written in
+**OpenScreenRecorder** (Open Source) is a modern UWP Screen Recorder written in
 Windows.Graphics.Capture API. It demonstrates how a programmer can take 
 advantage of these new APIs to produce a screen recorder in minutes. 
 In addition to the Windows Graphics Capture API, the recorder also utilizies
