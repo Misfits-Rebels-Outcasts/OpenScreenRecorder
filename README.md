@@ -6,13 +6,21 @@ Windows.Graphics.Capture API. It demonstrates how a programmer can take
 advantage of these new APIs to produce a screen recorder in minutes. 
 In addition to the Windows Graphics Capture API, the recorder also utilizies
  Win 2D , and MediaComposition (Windows.Media.Editing). 
+ 
+ ![Image of OpenScreenRecorder](https://github.com/TechnoRiver/OpenScreenRecorder/blob/master/images/OpenScreenRecorder.png)
 
 All these APIS are quite recent releases in the .NET Core framework for Windows.
 Some of them also take advantage of GPU and hardware acceleration to deliver 
 high performance results. As the tool is written in .NET Core, 
 a programmer may also easily compile the project to ARM and ARM64 using Visual Studio. 
-Currently, the tool is tested to run on (recently updated version of ) 
-Windows 10.
+Currently, the tool is tested to run on (recently updated version 1809 of ) 
+Windows 10. To compile in Windows, after downloading the project, you may want to set the Solution Platform to x86 or x64.
+
+ ![Image of SolutionPlatform](https://github.com/TechnoRiver/OpenScreenRecorder/blob/master/images/SolutionPlatform.png)
+
+**Usage**
+
+![Image of Usage](https://github.com/TechnoRiver/OpenScreenRecorder/blob/master/images/Usage.png)
 
 The way the code works together represents a very useful skillset for a programmer 
 looking into creating media softwares using modern APIs for UWP Windows Apps.
