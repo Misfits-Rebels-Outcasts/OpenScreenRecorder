@@ -13,8 +13,9 @@ All these APIS are quite recent releases in the .NET Core framework for Windows.
 Some of them take advantage of GPU and hardware acceleration to deliver 
 high performance results. As the tool is written in .NET Core, 
 a programmer may also easily compile the project to ARM and ARM64 using Visual Studio. 
-Currently, the tool is tested to run on (the recently updated version 1809 of ) 
-Windows 10. To compile in Windows, after downloading the project, you may want to set the Solution Platform to x86 or x64.
+Currently, the tool is tested to run on  
+Windows 10 (version 1809). To compile in Windows, 
+after downloading the project, you may want to set the Solution Platform to x86 or x64.
 
 <kbd><img src="https://github.com/TechnoRiver/OpenScreenRecorder/blob/master/images/SolutionPlatform.png"></kbd>
 
