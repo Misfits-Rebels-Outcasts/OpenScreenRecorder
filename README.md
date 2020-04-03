@@ -16,7 +16,7 @@ a programmer may also easily compile the project to ARM and ARM64 using Visual S
 Currently, the tool is tested to run on (recently updated version 1809 of ) 
 Windows 10. To compile in Windows, after downloading the project, you may want to set the Solution Platform to x86 or x64.
 
-<kbd><img src=https://github.com/TechnoRiver/OpenScreenRecorder/blob/master/images/SolutionPlatform.png"></kbd>
+<kbd><img src="https://github.com/TechnoRiver/OpenScreenRecorder/blob/master/images/SolutionPlatform.png"></kbd>
 
 The way the code works together represents a very useful skillset for a programmer 
 looking into creating media softwares using modern APIs for UWP Windows Apps.
@@ -71,7 +71,7 @@ but doing will give very stable rates of recording and decent interactivity for 
 
 **Usage**
 
-<kbd><img src=https://github.com/TechnoRiver/OpenScreenRecorder/blob/master/images/Usage.png"></kbd>
+<kbd><img src="https://github.com/TechnoRiver/OpenScreenRecorder/blob/master/images/Usage.png"></kbd>
 
 Note, after (stopping) the recording , the user will still need to manually click the 
 'Unpack' button to encode the compressed frames into a MPEG (mp4) file. This step may require 
