@@ -122,7 +122,7 @@ into a MP4 video. The author considers this simple feature itself constitute
  an important capability that could enpower a suite of applications to fully
 produce media files.
 
-Examples of applications that immediately come to the author mind includes video editing applications
+Examples of applications that immediately come to the author's mind includes video editing applications
 that applies Win2D effects to selected regions of a video recorded by cellphone. If you run
 the Win2D Gallery samples, you will also notice many cool things that are easily produced with 
 Win2D such as Bitmap Effects, WebCam, HLSL and Particles Systems animations can all be 
