@@ -124,7 +124,7 @@ produce media files.
 
 Examples of applications that immediately come to the author's mind includes video editing applications
 that applies Win2D effects to selected regions of a video recorded by cellphone. If you run
-the Win2D Gallery samples, you will also notice many cool things that are easily produced with 
+the [Win2D Gallery](https://www.microsoft.com/en-us/p/win2d-example-gallery/9nblgggxwt9f?activetab=pivot:overviewtab) samples, you will also notice many cool things that are easily produced with 
 Win2D such as Bitmap Effects, WebCam, HLSL and Particles Systems animations can all be 
 **composited** with the CanvasRenderTarget and rendered into a movie.
 
