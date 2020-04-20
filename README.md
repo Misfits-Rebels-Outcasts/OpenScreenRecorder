@@ -6,7 +6,12 @@ Windows.Graphics.Capture API. It demonstrates how a programmer can take
 advantage of these new APIs to produce a screen recorder in minutes. 
 In addition to the Windows Graphics Capture API, the recorder also utilizes
  Win 2D , and MediaComposition (Windows.Media.Editing). 
+
+
+ [**Important Update**  KittyMemoryTranscode_v0.75](#update-v075)
+  
  
+
  <kbd><img src="https://github.com/TechnoRiver/OpenScreenRecorder/blob/master/images/OpenScreenRecorder.png"></kbd>
 
 All these APIS are quite recent releases in the .NET Core framework for Windows.
@@ -99,6 +104,41 @@ to produce a MPEG movie. While this method is extremely easy with just a few lin
 there is a concern that encoding a large video, say, with more than 1000 frames 
 can be slow and unstable. In the near future, an improved version using Transcoding API 
 will be utilized to make the encoding more robust.
+
+
+### Update v0.75
+**KittyMemoryTranscode_v0.75** (Demonstrating Transcode API with IDirect3DSurface)
+
+By far, this is the most valuable contribution among all the previous releases. 
+This update uses the Transcode API to unpack frames from the memory buffers and encode them into
+MP4. This method, the author believe, is much more robust compared to previous versions ,
+ which instead uses the MediaComposition to produce the video file.
+
+**Importance:**
+
+The value of this update lies in a little piece of code that offers the programmer the 
+ability to render in offscreen animated frames of Win2D (CanvasRenderTarget or IDirect3DSurface)
+into a MP4 video. The author considers this simple feature itself constitute
+ an important capability that could enpower a suite of applications to fully
+produce media files.
+
+Examples of applications that immediately come to the author mind includes video editing applications
+that applies Win2D effects to selected regions of a video recorded by cellphone. If you run
+the Win2D Gallery samples, you will also notice many cool things that are easily produced with 
+Win2D such as Bitmap Effects, WebCam, HLSL and Particles Systems animations can all be 
+**composited** with the CanvasRenderTarget and rendered into a movie.
+
+The author understands these types of media production applications may
+still be able to make a little revenue in today's collapsed world of software prices
+ ever since low cost apps flooded the market and drove out many small independent developers.
+The research on this simple capablity has taken the author more than two weeks, but 
+the potential of what this code is able do is definitely worth the effort.
+
+**Bugs**
+
+There are still some bugs in this release as the author forgets to free memory buffers
+after the transcoding operation. This is quite trivial and will be fixed in the next release.
+
 
 
 **Credits**
