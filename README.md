@@ -146,8 +146,7 @@ after the transcoding operation. This is quite trivial and will be fixed in the 
 
 ### Webcam_v0.80
 
-**KittyMemoryWebcam_v0.80**
-**VideoBasicEffects_v0.1**
+**KittyMemoryWebcam_v0.80**  and  **VideoBasicEffects_v0.1**
 
 This version demostrates recording audio and webcam in addition to screen recording.
 The audio or webcam file is recorded separately (as another file) and merged with the screen recording to produce the final video file.
@@ -162,7 +161,7 @@ video effect in a different project, it shows how easy it is to create software 
 existing videos with Win2D (such as blending, color modifications, edge detection, border etc)
 by making change to each frame. 
 
-
+---
 
 **Credits**
 
@@ -174,3 +173,6 @@ https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/screen-capture
 Simple Screen Recorder
 https://github.com/robmikh/SimpleRecorder
 https://github.com/robmikh/SimpleRecorder
+
+VideoCaptureWithEditing
+https://github.com/LanceMcCarthy/VideoCaptureWithEditing
