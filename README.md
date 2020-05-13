@@ -8,7 +8,7 @@ In addition to the Windows Graphics Capture API, the recorder also utilizes
  Win 2D , and MediaComposition (Windows.Media.Editing). 
 
 
- [**Update** KittyMemoryWebcam_v0.80] (#update-v080)
+ [**Update** KittyMemoryWebcam_v0.80] (#update-v0801)
  
  [**Important Update**  KittyMemoryTranscode_v0.75](#update-v075)
   
@@ -107,6 +107,7 @@ there is a concern that encoding a large video, say, with more than 1000 frames
 can be slow and unstable. In the near future, an improved version using Transcoding API 
 will be utilized to make the encoding more robust.
 
+---
 
 ### Update v0.75
 **KittyMemoryTranscode_v0.75** (Demonstrating Transcode API with IDirect3DSurface)
@@ -141,8 +142,9 @@ the potential of what this code is able do is definitely worth the effort.
 There are still some bugs in this release as the author forgets to free memory buffers
 after the transcoding operation. This is quite trivial and will be fixed in the next release.
 
+---
 
-### Update v0.80
+### Update v0.801
 
 **KittyMemoryWebcam_v0.80**
 **VideoBasicEffects_v0.1**
