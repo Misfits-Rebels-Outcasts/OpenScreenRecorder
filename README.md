@@ -8,7 +8,7 @@ In addition to the Windows Graphics Capture API, the recorder also utilizes
  Win 2D , and MediaComposition (Windows.Media.Editing). 
 
 
- [**Update** KittyMemoryWebcam_v0.80] (#update-v80)
+ [**Update** KittyMemoryWebcam_v0.80] (#update-v080)
  
  [**Important Update**  KittyMemoryTranscode_v0.75](#update-v075)
   
@@ -153,6 +153,7 @@ With the MediaCapture API, the recording of audio from microphone or video from 
 achieved with just a few lines of code.
 
 **Video Editing Software**
+
 Furthermore, the sample makes use of a separate Windows Runtime Component (.winmd file) to add 
 video effect to the webcam recording. Except for the inconvenience of having to create the
 video effect in a different project, it shows how easy it is to create software that modify
