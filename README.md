@@ -8,6 +8,8 @@ In addition to the Windows Graphics Capture API, the recorder also utilizes
  Win 2D , and MediaComposition (Windows.Media.Editing). 
 
 
+ [**Update** KittyMemoryWebcam_v0.80] (#update-v80)
+ 
  [**Important Update**  KittyMemoryTranscode_v0.75](#update-v075)
   
  
@@ -138,6 +140,24 @@ the potential of what this code is able do is definitely worth the effort.
 
 There are still some bugs in this release as the author forgets to free memory buffers
 after the transcoding operation. This is quite trivial and will be fixed in the next release.
+
+
+### Update v0.80
+
+**KittyMemoryWebcam_v0.80**
+**VideoBasicEffects_v0.1**
+
+This version demostrates recording audio and webcam in addition to screen recording.
+The audio or webcam file is recorded separately (as another file) and merged with the screen recording to produce the final video file.
+With the MediaCapture API, the recording of audio from microphone or video from webcam is easily
+achieved with just a few lines of code.
+
+**Video Editing Software**
+Furthermore, the sample makes use of a separate Windows Runtime Component (.winmd file) to add 
+video effect to the webcam recording. Except for the inconvenience of having to create the
+video effect in a different project, it shows how easy it is to create software that modify
+existing videos with Win2D (such as blending, color modifications, edge detection, border etc)
+by making change to each frame. 
 
 
 
