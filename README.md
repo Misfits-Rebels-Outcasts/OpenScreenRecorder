@@ -8,7 +8,7 @@ In addition to the Windows Graphics Capture API, the recorder also utilizes
  Win 2D , and MediaComposition (Windows.Media.Editing). 
 
 
- [**Update** KittyMemoryWebcam_v0.80] (#update-v0801)
+ [**Update** KittyMemoryWebcam_v0.80] (#update-webcam)
  
  [**Important Update**  KittyMemoryTranscode_v0.75](#update-v075)
   
@@ -144,7 +144,7 @@ after the transcoding operation. This is quite trivial and will be fixed in the 
 
 ---
 
-### Update v0.801
+### Update Webcam
 
 **KittyMemoryWebcam_v0.80**
 **VideoBasicEffects_v0.1**
