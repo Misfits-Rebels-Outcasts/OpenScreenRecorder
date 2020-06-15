@@ -163,12 +163,20 @@ by making change to each frame.
 
 ---
 
+**Related Projects**
+
+A related project by the same author that also employs Win2D extensively is the Open Photo Effects Editor at
+
+https://github.com/Misfits-Rebels-Outcasts/OpenPhotoEffects
+
+
 **Credits**
 
 At the time of this writing, other samples already exist, and some parts of this project has been referenced from them.
 
 Screen Capture sample:
-https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/screen-capture
+https://docs.microsoft.com/en-us/windows/uwp/audio-video-ca
+mera/screen-capture
 
 Simple Screen Recorder
 https://github.com/robmikh/SimpleRecorder
